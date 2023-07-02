@@ -4,7 +4,7 @@
   2. 时间复杂度logn
 
 #### 2.二分查找---重复元素
-[在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/)
+[力扣链接](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/)
   1. 解题
      1. 寻找第一个 >=target的数(判断该数是否==target)
      2. 寻找的一个 >=target + 1 的数
@@ -31,3 +31,17 @@ var searchLeft = function (nums, target) {
   - 双指针
   - 找到target的下标并只更新fastIndex
   - 将fastIndex的值赋给slowIndex
+
+#### 螺旋矩阵
+[力扣链接](https://leetcode.cn/problems/spiral-matrix-ii/)
+![](https://assets.leetcode.com/uploads/2020/11/13/spiraln.jpg)
+ 1. 二维数组的构建方法
+     - 嵌套循环
+     - Array.from()
+       可以接受一个类似数组的对象，根据回调函数返回一个**新的**数组实例
+       `const arr = Array.from(Array(m), () => Array(n))`
+     - Array.fill()和map() 
+       `const arr = Array(m).fill().map(() => Array(n))`
+ 2. 解题在于边界以及注意n为奇数时的处理
+    1. 边界: 每层循环时不带上最后一位,下一层循环时x与y的设置
+    2. n为奇数: 不在循环中,单独解决情况 
