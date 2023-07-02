@@ -13,6 +13,7 @@
      1. target小于等于nums[mid]更新右下标
      2. 直至left = right时找到第一个>=target的数
 ```
+
 var searchLeft = function (nums, target) {
   let left = 0,
     right = nums.length
