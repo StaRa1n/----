@@ -1,4 +1,4 @@
-## 数组
+## 一.数组
 #### 1.二分查找
   1. 有序数列中比较目标值与中间值的大小(以更新中间值)
   2. 时间复杂度logn
@@ -28,13 +28,13 @@ var searchLeft = function (nums, target) {
   return left
 }
 ```
-#### 移除元素--原地修改数组
+#### 3.移除元素--原地修改数组
   - 双指针
   - 找到target的下标并只更新fastIndex
   - 将fastIndex的值赋给slowIndex
 
-#### 螺旋矩阵
-[力扣链接](https://leetcode.cn/problems/spiral-matrix-ii/)
+#### 4.螺旋矩阵
+[螺旋矩阵II](https://leetcode.cn/problems/spiral-matrix-ii/)
 ![](https://assets.leetcode.com/uploads/2020/11/13/spiraln.jpg)
  1. 二维数组的构建方法
      - 嵌套循环
@@ -47,10 +47,12 @@ var searchLeft = function (nums, target) {
     1. 边界: 每层循环时不带上最后一位,下一层循环时x与y的设置
     2. n为奇数: 不在循环中,单独解决情况 
 
+#### 5.位运算
+[只出现一次的数字](https://leetcode.cn/problems/single-number/)
 
 
 
-## 回溯
+## 二.回溯
   三要素:
   - 确认返回值和参数
   - 确认终止条件
