@@ -1,3 +1,4 @@
+// https://leetcode.cn/problems/jump-game/
 function canJump(nums) {
   const dp = Array()
   // dp[n]表示该下标所能到达的最远位置
