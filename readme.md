@@ -1,4 +1,8 @@
 ## 一.数组
+
+二维数组的创建
+from() : const arr = Array.from(Array(m), () => Array(n))
+fill() : const arr = Array(m).fill().map(() => Array(n))
 #### 1.二分查找
   1. 有序数列中比较目标值与中间值的大小(以更新中间值)
   2. 时间复杂度logn
